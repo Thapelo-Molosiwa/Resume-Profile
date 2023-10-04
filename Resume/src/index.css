@@ -1,0 +1,75 @@
+/* Create a pseudo-element for the blurred background */
+body::before {
+    content: "";
+    background-image: url('../components/images/which-one-piece-character-are-you-1024x581.avif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px); /* Adjust the blur amount as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the blurred background behind the content */
+}
+
+body {
+    /* Your other styles for the content */
+    color: #fff; /* Text color on top of the background */
+}
+
+.thapelo {
+    text-align: center; /* Center the text horizontally */
+    position: relative;
+    top: 200px;
+    font-weight: bold; /* Make the text bold */
+    font-size: 24px; /* Adjust the font size as needed */
+  
+    /* Animation */
+    animation: bounce 2s infinite; /* Apply the bounce animation */
+  }
+  
+  /* Keyframes for the bounce animation */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); /* Bounce at the starting and ending point */
+    }
+    40% {
+      transform: translateY(-30px); /* Move the text up during the bounce */
+    }
+    60% {
+      transform: translateY(-15px); /* Move the text up during the bounce */
+    }
+  }
+  
+  .loading-container {
+    
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Place it above other content */
+  }
+  
+  .loading {
+    position: relative;
+    text-align: center;
+    width: 50px; /* Set the width and height as needed */
+    height: 50px;
+    border: 5px solid #000000; /* Set the border color */
+    border-radius: 50%; /* Make it a circle */
+    border-top: 5px solid transparent; /* Create a spinner effect */
+    animation: spin 1s linear infinite; /* Apply a simple spin animation */
+  }
+  
+  /* Define the spin animation */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    100% {
+      transform: rotate(360deg); /* End at 360 degrees */
+    }
+  }
+  

@@ -1,0 +1,79 @@
+.myName {
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    padding-left: 10px; /* Add left padding to separate it from the rest of the links */
+  }
+  
+  .myName a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); /* Inherit the color from the parent container */
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .myName a:hover {
+    backdrop-filter: blur(10px);
+    transform: translateY(-5px); 
+    color: #ffffff; 
+    transform: translateY(-5px);
+  }
+  
+  
+
+.blow{
+    display: flex;
+    justify-content: space-evenly;
+    backdrop-filter: blur(10px);
+     padding: 0 10px;
+     height: 75px;
+     
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.myList {
+    list-style: none; /* Remove list bullet or marker */
+    display: flex;
+   
+}
+
+.myList li {
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 10px; /* Add some padding to separate items */
+}
+
+
+/* Define styles for the navigation items */
+.navItem {
+    padding: 10px;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Apply the hover effect */
+.navItem:hover {
+    backdrop-filter: blur(10px);
+    transform: translateY(-5px); 
+    color: #ffffff; 
+}
+
+  
+  
+  /* Style for navigation links */
+  .myList li a {
+    
+    text-decoration: none; /* Remove text decoration */
+    color: inherit; /* Inherit the color from the parent li element */
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  }
+  
+ 
+  
