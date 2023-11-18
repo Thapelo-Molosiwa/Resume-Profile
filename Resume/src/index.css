@@ -1,7 +1,7 @@
 /* Create a pseudo-element for the blurred background */
 body::before {
     content: "";
-    background-image: url('../components/images/which-one-piece-character-are-you-1024x581.avif');
+    background-image: url('../components/images/4b.\ 361A5186.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

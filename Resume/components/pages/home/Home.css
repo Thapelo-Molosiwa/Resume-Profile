@@ -1,0 +1,76 @@
+/* Style for the container of the home page */
+.homeContainer {
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Style for the circular image */
+img {
+   clip-path: circle();
+    object-fit: cover; /* Maintain image aspect ratio */
+}
+
+/* Style for the introduction section */
+.intro {
+   
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px; /* Limit the width of the intro section for readability */
+}
+
+/* Style for the name and title */
+.intro h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Style for the horizontal line */
+.intro hr {
+    border: 2px solid #dbd8d8;
+    margin: 10px 0;
+}
+
+/* Style for the paragraphs */
+.intro p {
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+
+
+/* Style for the self-introduction section */
+.SelfIntro {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for the circular image in self-introduction */
+.SelfIntro img {
+    max-width: 250px; /* Limit the image size */
+    height: auto;
+    border-style: solid;
+    border-color: #dbd8d8;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover; /* Maintain image aspect ratio */
+}
+
+
+
+/* Style for the paragraphs in self-introduction */
+.SelfIntro p {
+    font-size: 16px;
+    font-size: larger;
+    line-height: 1.5;
+    font-weight: bold;
+    margin: 10px 0;
+}
