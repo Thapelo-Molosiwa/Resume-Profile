@@ -6,6 +6,10 @@
   padding-left: 10px; /* Add left padding to separate it from the rest of the links */
 }
 
+*{
+  margin: auto;
+}
+
 .myName a {
   text-decoration: none;
   color: rgb(255, 255, 255); /* Inherit the color from the parent container */
@@ -23,9 +27,9 @@
   display: flex;
   justify-content: space-evenly;
   backdrop-filter: blur(10px);
-  padding: 0 10px;
+  
   height: 75px;
-  box-shadow: 10px 20px 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 0px 10px 20px rgba(255, 255, 255, 0.2);
 }
 
 .myList {
