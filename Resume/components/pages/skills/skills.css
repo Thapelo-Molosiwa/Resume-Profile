@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 .skillset {
   display: flex;
   justify-content: space-evenly;
@@ -6,23 +7,43 @@
 
 .skillbox {
   padding: 60px;
+  margin-top: 75px;
 }
 
 .skillset ul {
-   
-    font-weight: bold;
-    list-style-type: none;
-    padding: 0; /* Optional: to remove default padding */
-    margin: 0; /* Optional: to remove default margin */
-  }
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
 .skillset h1 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .bothsh {
   text-align: left;
-  font-weight: bold;
+  /* Removed font-weight: bold; */
   font-size: 24px;
   margin: 10px 0;
+}
+
+/* Mobile styles using media queries */
+@media only screen and (max-width: 600px) {
+  .skillset {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .skillbox {
+    margin-top: 75px;
+    padding: 30px;
+  }
+
+  .bothsh {
+    text-align: left;
+  }
+
+  .skillset h1 {
+    margin-bottom: 1rem;
+  }
 }

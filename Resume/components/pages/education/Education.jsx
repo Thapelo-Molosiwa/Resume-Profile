@@ -1,6 +1,6 @@
 import React from "react";
 import "../education/education.css";
-import certificateImage from "../../images/I.T-molosiwas-certificate.jpg";  // Import the certificate image
+import certificateImage from "../../images/I.T-molosiwas-certificate.jpg"; // Import the certificate image
 import Downloadbtn from "../../downloadbtn/downloadbtn";
 
 export default function Education() {
@@ -56,12 +56,15 @@ export default function Education() {
       <div>
         <p>Download my Certificates below.</p>
 
-        <div>
-          
-         <div>
-
-        <h3>Udemy Certificate</h3> <Downloadbtn onDownload={handleDownload} />
-         </div>
+        <div className="buttons">
+          <div>
+            <h3>Udemy Certificate</h3>
+            <Downloadbtn onDownload={handleDownload} />
+          </div>
+          <div>
+            <h3>CodeSpace</h3>
+            <Downloadbtn/>
+          </div>
         </div>
       </div>
     </div>

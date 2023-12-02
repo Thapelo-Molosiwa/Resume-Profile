@@ -8,6 +8,7 @@
 
 *{
   margin: auto;
+  
 }
 
 .myName a {
@@ -24,14 +25,20 @@
 }
 
 .blow {
-  display: flex;
-  justify-content: space-evenly;
-  backdrop-filter: blur(10px);
   
-  height: 75px;
-  box-shadow: 5px 0px 10px 20px rgba(255, 255, 255, 0.2);
-}
-
+ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    backdrop-filter: blur(10px);
+    height: 75px;
+    box-shadow: 5px 0px 10px 20px rgba(255, 255, 255, 0.2);
+    z-index: 100; /* Adjust the z-index as needed */
+  }
+  
 .myList {
   list-style: none; /* Remove list bullet or marker */
   display: flex;
@@ -70,3 +77,5 @@
   color: inherit; /* Inherit the color from the parent li element */
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
+
+
