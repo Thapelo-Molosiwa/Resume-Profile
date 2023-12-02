@@ -13,9 +13,7 @@ export default function Header() {
         <li className="navItem">
           <Link to="/skills">Skills</Link>
         </li>
-        <li className="navItem">
-          <Link to="/tester">Tester</Link>
-        </li>
+        
         <li className="navItem">
           <Link to="/education">Education</Link>
         </li>

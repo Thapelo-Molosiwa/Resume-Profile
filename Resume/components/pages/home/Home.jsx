@@ -13,7 +13,7 @@ export default function Home() {
           <h1 className="nameTag">I.T Molosiwa</h1>
           <h2 className="myTitle">Software Developer</h2>
 
-          <p className="innit">
+          <p>
             Hello! I'm Thapelo, a passionate and driven individual with a love
             for Software Development.
             <br /> With a background in Software development from CodeSpace
