@@ -1,6 +1,8 @@
 import React from "react";
 import "../education/education.css";
 import certificateImage from "../../images/I.T-molosiwas-certificate.jpg"; // Import the certificate image
+import certificateImage from "../../images/ISAMOL968 Isaac Molosiwa CodeSpace Certificate (1).pdf";
+
 import Downloadbtn from "../../downloadbtn/downloadbtn";
 
 export default function Education() {
@@ -14,6 +16,27 @@ export default function Education() {
 
     // Set the download attribute with the desired file name
     downloadLink.download = "I.T-molosiwas-certificate.jpg";
+
+    // Append the link to the body
+    document.body.appendChild(downloadLink);
+
+    // Trigger a click on the link to start the download
+    downloadLink.click();
+
+    // Remove the link from the body
+    document.body.removeChild(downloadLink);
+  };
+
+   //to download CodeSpace cert
+  const handleDownloadCert = () => {
+    // Create a link element
+    const downloadLink = document.createElement("a");
+
+    // Set the href attribute to the certificate image URL
+    downloadLink.href = certificateImage;
+
+    // Set the download attribute with the desired file name
+    downloadLink.download = "ISAMOL968 Isaac Molosiwa CodeSpace Certificate (1).pdf";
 
     // Append the link to the body
     document.body.appendChild(downloadLink);
@@ -63,7 +86,7 @@ export default function Education() {
           </div>
           <div>
             <h3>CodeSpace</h3>
-            <Downloadbtn/>
+            <Downloadbtn onDownload={handleDownloadCert}/>
           </div>
         </div>
       </div>
