@@ -1,5 +1,6 @@
 /* Default styles for larger screens */
 .Edu {
+    font-family: serif;
     text-align: center;
     padding: 60px;
     margin-top: 75px; /* Adjust this value to match the height of your sticky element */
@@ -8,7 +9,7 @@
 
 .Edu p {
     margin-bottom: 1rem;
-    font-size: 20px;
+   
     margin: 10px 0;
     line-height: 1.5;
     text-align: left;
@@ -30,10 +31,7 @@
        
     }
 
-    .Edu p {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-
+   
     .buttons {
         flex-direction: column; /* Stack buttons vertically on smaller screens */
     }

@@ -10,9 +10,15 @@ export default function Header() {
       </div>
 
       <ul className="myList">
+
+      <li className="navItem">
+          <Link to="/about">About</Link>
+        </li>
+
         <li className="navItem">
           <Link to="/skills">Skills</Link>
         </li>
+
         
         <li className="navItem">
           <Link to="/education">Education</Link>

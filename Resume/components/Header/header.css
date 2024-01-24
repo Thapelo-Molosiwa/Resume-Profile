@@ -1,6 +1,6 @@
 .myName {
   font-size: larger;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: sans-serif
   display: flex;
   align-items: center;
   padding-left: 10px; /* Add left padding to separate it from the rest of the links */

@@ -1,7 +1,7 @@
 /* Create a pseudo-element for the blurred background */
 body::before {
     content: "";
-    background-color: rgb(49, 49, 68);
+    background-color: rgb(31, 30, 30);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,6 +15,7 @@ body::before {
 }
 
 body {
+  
     
     color: whitesmoke; 
 }

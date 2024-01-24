@@ -86,7 +86,7 @@ export default function Education() {
             <Downloadbtn onDownload={handleDownload} />
           </div>
           <div>
-            <h3>CodeSpace</h3>
+            <h3>CodeSpace Academy</h3>
             <Downloadbtn onDownload={handleDownloadCert}/>
           </div>
         </div>
