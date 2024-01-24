@@ -1,76 +1,78 @@
-/* Style for the container of the home page */
+/* Default styles for larger screens */
 .homeContainer {
     display: flex;
     justify-content: space-evenly;
-   align-items: center;
+    align-items: center;
     text-align: center;
     padding: 20px;
     margin-top: 75px;
-    
 }
 
-
-/* Style for the circular image */
 img {
-   clip-path: circle();
-    object-fit: cover; /* Maintain image aspect ratio */
+    clip-path: circle();
+    object-fit: cover;
 }
 
-/* Style for the introduction section */
 .intro {
-   
     padding: 15px;
     border-radius: 10px;
-    max-width: 600px; /* Limit the width of the intro section for readability */
+    max-width: 600px;
 }
 
-/* Style for the name and title */
 .intro h2 {
     font-weight: bold;
     font-size: 24px;
     margin: 10px 0;
 }
 
-/* Style for the horizontal line */
 .intro hr {
     border: 2px solid #dbd8d8;
     margin: 10px 0;
 }
 
-/* Style for the paragraphs */
 .intro p {
     font-size: 20px;
     margin: 10px 0;
     line-height: 1.5;
 }
 
-
-
-/* Style for the self-introduction section */
 .SelfIntro {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     text-align: left;
     padding: 20px;
 }
 
-/* Style for the circular image in self-introduction */
 .SelfIntro img {
-    max-width: 250px; /* Limit the image size */
+    max-width: 250px;
     height: auto;
     border-style: solid;
     border-color: #dbd8d8;
     border-radius: 50%;
     margin-bottom: 20px;
-    object-fit: cover; /* Maintain image aspect ratio */
+    object-fit: cover;
 }
 
-
-
-/* Style for the paragraphs in self-introduction */
 .SelfIntro p {
     font-size: 20px;
     margin: 10px 0;
     line-height: 1.5;
     text-align: left;
+}
+
+/* Mobile view styles */
+@media (max-width: 600px) {
+    .homeContainer {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .intro {
+        max-width: 100%;
+    }
+
+    .SelfIntro img {
+        max-width: 100%;
+    }
 }

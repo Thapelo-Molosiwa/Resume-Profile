@@ -1,7 +1,7 @@
 import React from "react";
 import "../education/education.css";
-import certificateImage from "../../images/I.T-molosiwas-certificate.jpg"; // Import the certificate image
-import certificateImage from "../../images/ISAMOL968 Isaac Molosiwa CodeSpace Certificate (1).pdf";
+import udemyCertificateImage from "../../images/I.T-molosiwas-certificate.jpg"; // Import the Udemy certificate image
+import codeSpaceCertificateImage from "../../images/ISAMOL968 Isaac Molosiwa CodeSpace Certificate (1).pdf"; // Import the CodeSpace certificate image
 
 import Downloadbtn from "../../downloadbtn/downloadbtn";
 
@@ -11,8 +11,8 @@ export default function Education() {
     // Create a link element
     const downloadLink = document.createElement("a");
 
-    // Set the href attribute to the certificate image URL
-    downloadLink.href = certificateImage;
+    // Set the href attribute to the Udemy certificate image URL
+    downloadLink.href = udemyCertificateImage;
 
     // Set the download attribute with the desired file name
     downloadLink.download = "I.T-molosiwas-certificate.jpg";
@@ -32,8 +32,8 @@ export default function Education() {
     // Create a link element
     const downloadLink = document.createElement("a");
 
-    // Set the href attribute to the certificate image URL
-    downloadLink.href = certificateImage;
+    // Set the href attribute to the CodeSpace certificate image URL
+    downloadLink.href = codeSpaceCertificateImage;
 
     // Set the download attribute with the desired file name
     downloadLink.download = "ISAMOL968 Isaac Molosiwa CodeSpace Certificate (1).pdf";
@@ -47,6 +47,7 @@ export default function Education() {
     // Remove the link from the body
     document.body.removeChild(downloadLink);
   };
+
 
   return (
     <div className="Edu">
