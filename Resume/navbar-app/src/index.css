@@ -12,6 +12,6 @@ code {
     monospace;
 }
 
-p{
-  font-family: sans-serif;
+p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Adjust as needed */
 }

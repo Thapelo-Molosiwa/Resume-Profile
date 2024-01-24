@@ -4,12 +4,9 @@
     text-align: center;
     padding: 60px;
     margin-top: 75px; /* Adjust this value to match the height of your sticky element */
-    
 }
 
 .Edu p {
-    margin-bottom: 1rem;
-   
     margin: 10px 0;
     line-height: 1.5;
     text-align: left;
@@ -17,22 +14,27 @@
 
 .Edu h3 {
     margin-bottom: 1rem;
+    font-size: 1.5rem; /* Adjust the font size for h3 */
 }
 
 .buttons {
     display: flex;
+    justify-content: center; /* Center buttons horizontally on larger screens */
 }
 
 /* Mobile styles using media queries */
 @media only screen and (max-width: 600px) {
     .Edu {
         margin-top: 75px;
-        padding: 40px; /* Adjust padding for smaller screens */
-       
+        padding: 20px; /* Adjust padding for smaller screens */
     }
 
-   
+    .Edu h3 {
+        font-size: 1.2rem; /* Adjust the font size for h3 on smaller screens */
+    }
+
     .buttons {
         flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center; /* Center buttons vertically on smaller screens */
     }
 }

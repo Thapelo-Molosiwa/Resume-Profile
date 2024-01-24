@@ -1,6 +1,6 @@
 /* Default styles for larger screens */
 .skillset {
-  text-wrap: balance;
+  word-wrap: break-word; /* Corrected property name */
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 1rem;
@@ -23,7 +23,6 @@
 
 .bothsh {
   text-align: left;
-  /* Removed font-weight: bold; */
   font-size: 24px;
   margin: 10px 0;
 }
@@ -31,7 +30,6 @@
 /* Mobile styles using media queries */
 @media only screen and (max-width: 600px) {
   .skillset {
-    
     flex-direction: column;
     align-items: left;
   }
@@ -47,6 +45,6 @@
 
   .skillset h1 {
     margin-bottom: 1rem;
-    text-wrap: balance;
+    word-wrap: break-word; /* Corrected property name */
   }
 }

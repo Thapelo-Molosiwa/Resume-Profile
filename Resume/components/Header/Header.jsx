@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
@@ -12,7 +16,9 @@ export default function Header() {
   return (
     <header className="blow">
       <div className="myName">
-        <Link to="/">Home</Link>
+        <Link to="/" onClick={closeMenu}>
+          Home
+        </Link>
       </div>
 
       <div
@@ -26,16 +32,24 @@ export default function Header() {
       <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
         <ul className="myList">
           <li className="navItem">
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={closeMenu}>
+              About
+            </Link>
           </li>
           <li className="navItem">
-            <Link to="/skills">Skills</Link>
+            <Link to="/skills" onClick={closeMenu}>
+              Skills
+            </Link>
           </li>
           <li className="navItem">
-            <Link to="/education">Education</Link>
+            <Link to="/education" onClick={closeMenu}>
+              Education
+            </Link>
           </li>
           <li className="navItem">
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={closeMenu}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
