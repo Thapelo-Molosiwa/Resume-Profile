@@ -1,81 +1,109 @@
-.myName {
-  font-size: larger;
-  font-family: sans-serif
+/* header.css */
+
+.blow {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 10px; /* Add left padding to separate it from the rest of the links */
+  background-color: #333;
+  padding: 15px;
+  color: white;
 }
 
-*{
-  margin: auto;
-  
+.myName {
+  font-size: larger;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }
 
 .myName a {
   text-decoration: none;
-  color: rgb(255, 255, 255); /* Inherit the color from the parent container */
+  color: #fff;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .myName a:hover {
-  backdrop-filter: blur(10px);
   transform: translateY(-5px);
   color: #fff6f6;
-  transform: translateY(-5px);
 }
 
-.blow {
-  
- 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    backdrop-filter: blur(10px);
-    height: 75px;
-    box-shadow: 5px 0px 10px 20px rgba(255, 255, 255, 0.2);
-    z-index: 100; /* Adjust the z-index as needed */
-  }
-  
+.burger-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.nav {
+  display: flex;
+}
+
 .myList {
-  list-style: none; /* Remove list bullet or marker */
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
 .myList li {
-  color: rgb(249, 246, 246);
+  color: white;
   font-size: larger;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px; /* Add some padding to separate items */
-}
-
-/* Define styles for the navigation items */
-.navItem {
   padding: 10px;
-  margin: 5px;
-  color: #000000;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  margin: 0 15px;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
-/* Apply the hover effect */
-.navItem:hover {
-  backdrop-filter: blur(10px);
-  transform: translateY(-5px);
-  color: #ffffff;
-}
-
-/* Style for navigation links */
 .myList li a {
-  text-decoration: none; /* Remove text decoration */
-  color: inherit; /* Inherit the color from the parent li element */
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
+.myList li:hover {
+  transform: translateY(-5px);
+  color: #fff6f6;
+}
 
+@media only screen and (max-width: 768px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .myList {
+    flex-direction: column;
+  }
+
+  .burger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
