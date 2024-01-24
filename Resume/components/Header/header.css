@@ -2,6 +2,7 @@
 
 /* Reset margin and padding for the whole page */
 body, html {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -93,6 +94,10 @@ body, html {
     right: 40px; /* Adjust this value to move the burger menu to the right */
     top: 15px; /* Adjust this value if needed */
     z-index: 2; /* Ensure the burger menu is above other elements */
+  }
+
+  .blow{
+    position: fixed;
   }
 
   .nav {
