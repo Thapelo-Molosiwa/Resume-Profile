@@ -17,7 +17,7 @@ export default function Header() {
     <header className="blow">
       <div className="myName">
         <Link to="/" onClick={closeMenu}>
-          Home
+          I.T Molosiwa
         </Link>
       </div>
 
