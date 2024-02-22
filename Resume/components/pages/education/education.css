@@ -20,7 +20,8 @@
 
 .buttons {
     display: flex;
-    justify-content: center; /* Center buttons horizontally on larger screens */
+    justify-content: center; 
+    justify-content: space-evenly;
 }
 
 /* Mobile styles using media queries */

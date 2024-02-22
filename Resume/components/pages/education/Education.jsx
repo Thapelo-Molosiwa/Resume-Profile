@@ -6,7 +6,7 @@ import codeSpaceCertificateImage from "../../images/ISAMOL968 Isaac Molosiwa Cod
 import Downloadbtn from "../../downloadbtn/downloadbtn";
 
 export default function Education() {
-  //to download udemy cert
+  //to download udemy certR
   const handleDownload = () => {
     // Create a link element
     const downloadLink = document.createElement("a");
@@ -89,6 +89,7 @@ export default function Education() {
             <h3>CodeSpace Academy</h3>
             <Downloadbtn onDownload={handleDownloadCert}/>
           </div>
+         
         </div>
       </div>
     </div>
