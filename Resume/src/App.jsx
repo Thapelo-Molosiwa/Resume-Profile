@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header/Header";
 import "../src/index.css";
 import { Routes, Route } from "react-router-dom";
-import Contact from "../components/pages/contact/contact";
+import Contact from "../components/pages/contact/Contact";
 import Home from "../components/pages/home/Home";
 import Skills from "../components/pages/skills/Skills";
 import Education from "../components/pages/education/Education";
